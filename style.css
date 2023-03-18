@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root{
+ --primary-color:rgb(157, 16, 252);
+ font-size: 1rem;
+}
+
+
+* {
+    font-family: 'Tilt Neon', cursive;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+  text-align: center;  
+  margin-top: 2rem;
+}
+.container{
+    max-width: 768px;
+    width:80%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    box-shadow: 1px 1px 4px 4px rgba(0 ,0, 0,0.1);
+    padding:2rem;
+    
+}
+p#text{
+    font-size:0.9rem;
+}
+img#avatar {
+    border-radius: 100px;
+}
+
+h4#name {
+    margin-top:1rem;
+    font-size: 1.2rem;
+}
+
+p#job {
+    margin-top: 0.2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+p#text {
+padding: 10px 15px 0;
+} 
+
+.button-container {
+    margin:1rem;
+}
+
+i.fas.fa-chevron-left{
+    margin-right: 0.8rem;
+}
+i.fas.fa-chevron-right{
+    margin-left: 0.8rem;
+}
+
+i.fas.fa-chevron-left, i.fas.fa-chevron-right{
+color: var(--primary-color);
+font-size: 1.2rem;
+
+}
+
+button {
+    border: none;
+    background: none;
+}
+button.random-btn{
+border: 2px solid var(--primary-color);
+border-radius: 8px;
+padding:3px 10px;
+font-weight: bold;
+}
+button.random-btn:hover, button.prev-btn:hover, button.next-btn:hover, button.random-btn:focus, button.prev-btn:focus, button.next-btn:focus{
+    cursor: pointer;
+    
+}
+button.random-btn:hover{
+    background-color: var(--primary-color);
+    color:whitesmoke;
+}
